@@ -21,11 +21,8 @@ int main(){
 void giveTriangle(int numRows, ofstream& file){
 	for(int i = 0; i < numRows; i++){
 		int numTabs = numRows - i - 1;
-		for(int j = 0; j < numTabs; j++){
-			file << "\t";
-		}
 		for(int k = 0; k < i+1; k++){
-			file << choose(i,k) << "\t\t";
+			file << choose(i,k) << " ";
 		}
 		file << endl;
 	}	
